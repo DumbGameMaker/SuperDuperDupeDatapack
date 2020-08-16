@@ -7,4 +7,4 @@
 # Allow /trigger dupe
 scoreboard players enable @a dupe
 # Check if /trigger dupe is run
-execute as @a[scores={dupe=1..}] at @s run function dupes:dupe
+execute as @a[scores={dupe=1..}] if data entity @s selectedItem at @s run function dupes:dupe
